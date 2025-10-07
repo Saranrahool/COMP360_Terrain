@@ -3,6 +3,9 @@
 [ext_resource type="Script" uid="uid://sc5pff3sqqps" path="res://Scripts/terrain_manager.gd" id="1_jjgbg"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jjgbg"]
+sky_top_color = Color(0.737255, 0.815686, 1, 1)
+sky_horizon_color = Color(0.768627, 0.72549, 0.658824, 1)
+sky_energy_multiplier = 1.2
 
 [sub_resource type="Sky" id="Sky_bo1nx"]
 sky_material = SubResource("ProceduralSkyMaterial_jjgbg")
@@ -19,12 +22,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, -32)
 script = ExtResource("1_jjgbg")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 40, 80)
+transform = Transform3D(0.707107, -0.298836, 0.640856, 0, 0.906308, 0.422618, -0.707107, -0.298836, 0.640856, 36.7309, 33.736, 21.552)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 0, 0)
-light_energy = 2.5
-light_indirect_energy = 1.5
+light_color = Color(1, 0.952941, 0.815686, 1)
+light_energy = 2.0
 shadow_enabled = true
 shadow_bias = 0.05
 
